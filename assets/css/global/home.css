@@ -1,0 +1,45 @@
+/*=============
+Typography 
+=============*/
+.center-title h1,
+.center-title p {
+  text-align: center;
+  color: var(--white);
+}
+
+.center-title .span-h1 {
+  color: var(--secondary);
+}
+/*=============
+Layout
+=============*/
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--container);
+  padding-top: var(--container);
+}
+
+header {
+  background-color: var(--primary);
+}
+
+.header-image {
+  background-image: url('../../images/bg-pattern-home-2.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  height: 700px;
+}
+
+.center-title {
+  padding: 20% var(--container);
+}

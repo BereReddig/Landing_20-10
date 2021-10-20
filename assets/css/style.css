@@ -4,6 +4,7 @@
 /* GLOBAL */
 @import url(./global/reset.css);
 @import url(./global/base.css);
+@import url(./global/home.css);
 
 /* DEVICES */
 @import url(./devices/mobile.css) (max-width: 576px);
