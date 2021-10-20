@@ -1,5 +1,10 @@
 :root {
   /* COLORS */
+  --primary-ligth: #7dc3c5;
+  --primary: #014e58;
+  --primary-dark: #002528;
+
+  --seconday: #f67e7f;
 
   --white: #fff;
   --black: #000;
