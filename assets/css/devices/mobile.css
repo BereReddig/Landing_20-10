@@ -1,66 +1,66 @@
 /*=============
 Typography 
-=============*/ 
+=============*/
 .center-title h1 {
-    font-size: var(--font-2xl);
+  font-size: var(--font-2xl);
 }
 
 .center-title p {
-    font-size: var(--font-sm);
+  font-size: var(--font-base);
 }
 
 /*=============
  Layout
  =============*/
- input[name='nav-toggle'] {
-    display: none;
+input[name='nav-toggle'] {
+  display: none;
 }
 
 .nav-label {
-    display: block!important;
-    cursor: pointer;
+  display: block !important;
+  cursor: pointer;
 }
 
 #nav-toggle:checked ~ nav.menu {
-    display: block;
+  display: block;
 }
 
 nav.menu {
-    display: none;
+  display: none;
 }
 
 nav.menu {
-    position: absolute;
-    left: 75%;
-    top: 80px;
-    background-color: var(--primary-ligth);
-    width: 110px;
+  position: absolute;
+  left: 75%;
+  top: 80px;
+  background-color: var(--primary-ligth);
+  width: 110px;
 }
 
 nav.menu ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 nav.menu ul li {
-    padding: 0px 16%;
-    transition-duration: 0.2s;
+  padding: 0px 16%;
+  transition-duration: 0.2s;
 }
 
 nav.menu ul li:hover {
-    background: var(--primary-lighter);
+  background: var(--primary-lighter);
 }
 
 nav.menu button {
-    border: none;
-    width: 100%;
-    padding: 0px 12%;
-    margin: 0;
-    background-color: var(--primary-ligth);
-    cursor: pointer;
-    transition-duration: 0.2s;
+  border: none;
+  width: 100%;
+  padding: 0px 12%;
+  margin: 0;
+  background-color: var(--primary-ligth);
+  cursor: pointer;
+  transition-duration: 0.2s;
 }
 
 nav.menu button:hover {
-    background: var(--primary-lighter);
+  background: var(--primary-lighter);
 }
