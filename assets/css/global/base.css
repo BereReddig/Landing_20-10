@@ -1,29 +1,34 @@
-html, 
-body { 
-    padding: 0; 
-    margin: 0; 
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, 
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
-    scroll-behavior: smooth;
-} 
-a { 
-    color: inherit; 
-    text-decoration: none; 
-} 
-* { 
-    box-sizing: border-box; 
-} 
+/* GENERAL */
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  font-size: var(--font-base);
+  font-family: var(--ff-body);
+}
 
-img {
-    display: block;
-    max-width: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-title);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*=============
 Typography 
 =============*/
-
 
 /*=============
 Layout
