@@ -1,10 +1,11 @@
 :root {
   /* COLORS */
+  --primary-lighter: #aef1f3;
   --primary-ligth: #7dc3c5;
   --primary: #014e58;
   --primary-dark: #002528;
 
-  --seconday: #f67e7f;
+  --secondary: #f67e7f;
 
   --white: #fff;
   --black: #000;
@@ -21,13 +22,13 @@
   --ff-body: 'Livvic', sans-serif;
 
   /* FONT SIZES */
-  --font-xs: 0.6rem;
-  --font-sm: 0.8rem;
-  --font-base: 1rem;
-  --font-lg: 1.2rem;
-  --font-xl: 2rem;
-  --font-2xl: 4rem;
-  --font-display: 8rem;
+  --font-xs: 0.7rem;
+  --font-sm: 1.4rem;
+  --font-base: 2.1rem;
+  --font-lg: 2.8rem;
+  --font-xl: 3.5rem;
+  --font-2xl: 4.2rem;
+  --font-display: 4.9rem;
 
   /* SPACING */
   --container: 8%;

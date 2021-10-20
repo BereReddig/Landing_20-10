@@ -4,7 +4,6 @@ html {
 }
 
 body {
-  font-size: var(--font-base);
   font-family: var(--ff-body);
 }
 
@@ -29,7 +28,15 @@ a {
 /*=============
 Typography 
 =============*/
+.center-title h1,
+.center-title p {
+  text-align: center;
+  color: var(--white);
+}
 
+.center-title .span-h1 {
+  color: var(--secondary);
+}
 /*=============
 Layout
 =============*/
@@ -42,16 +49,24 @@ Layout
 
 .container-flex {
   display: flex;
-  margin: 20px 20px;
   justify-content: space-between;
   align-items: center;
+  padding: 0 var(--container);
+  padding-top: var(--container);
+}
+
+header {
+  background-color: var(--primary);
 }
 
 .header-image {
-  background-image: url('../../images/bg-pattern-about-1-mobile-nav-1.svg');
+  background-image: url('../../images/bg-pattern-home-2.svg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 600px;
-  justify-content: space-between;
+  background-size: 100%;
+  background-position: bottom;
+  height: 700px;
+}
+
+.center-title {
+  padding: 20% var(--container);
 }
