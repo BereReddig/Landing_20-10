@@ -33,6 +33,16 @@
   --font-3xl: 4rem;
   --font-display: 8rem;
 
+  /* FONT SIZES HOME */
+  --font-xs-home: 0.7rem;
+  --font-sm-home: 1.4rem;
+  --font-base-home: 2.1rem;
+  --font-lg-home: 2.8rem;
+  --font-xl-home: 3.5rem;
+  --font-2xl-home: 4.2rem;
+  --font-display-home: 4.9rem;
+
+
   /* SPACING */
   --container: 8%;
 

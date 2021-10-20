@@ -2,7 +2,8 @@
 Typography 
 =============*/
 .center-title h1 {
-  font-size: var(--font-2xl);
+    font-size: var(--font-display-home);
+    margin-bottom: 2%;
 }
 
 .center-title p {
