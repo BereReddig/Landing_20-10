@@ -1,11 +1,11 @@
-/* THEME */
-@import url('./skin/default.css');
-    
+/* VARIABLES */
+@import url(./skins/default.css);
+
 /* GLOBAL */
-/* @import url('./global/reset.css'); */
-@import url('./global/base.css');
+@import url(./global/reset.css);
+@import url(./global/base.css);
 
 /* DEVICES */
-@import url('./devices/mobile.css') (max-width: 600px);
-/* @import url('./devices/tablet.css') (min-width: 600px); */
-@import url('./devices/desktop.css')(min-width: 601px); 
+@import url(./devices/mobile.css) (max-width: 576px);
+@import url(./devices/tablet.css) (min-width: 577px);
+@import url(./devices/desktop.css) (min-width: 992px);
