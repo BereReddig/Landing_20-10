@@ -1,0 +1,74 @@
+/*=============
+Typography 
+=============*/
+.center-title h1,
+.center-title p {
+  text-align: center;
+  color: var(--white);
+}
+
+.center-title .span-h1,
+.bg-patter-3 h3 {
+  color: var(--secondary);
+}
+
+.bg-patter-3 h2 {
+    color: var(--white);
+    font-size: var();
+}
+
+.bg-patter-3 h3 {
+    text-align: center;
+}
+
+.bg-patter-3 p {
+    color: var(--gray);
+    text-align: center;
+}
+/*=============
+Layout
+=============*/
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--container);
+  padding-top: var(--container);
+}
+
+header {
+  background-color: var(--primary);
+}
+
+.center-title {
+  padding: 20% var(--container);
+}
+
+.header-image {
+  background-image: url('../../images/bg-pattern-home-2.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.bg-patter-3 {
+    background-image: url('../../images/bg-pattern-home-3.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 150% 1%;
+    background-color: var(--primary-dark);
+}
+
+.bg-patter-3 .border-pink {
+    border: 5px solid var(--secondary);
+    width: 150px;
+}
+
+
