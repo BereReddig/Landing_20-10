@@ -1,3 +1,8 @@
+/* GENERAL */
+.bg-pattern {
+  position: absolute;
+}
+
 #about header {
   position: relative;
   padding: 6rem var(--container) 4rem var(--container);
@@ -93,13 +98,7 @@
 }
 
 #about header .bg-pattern {
-  position: absolute;
   z-index: 0;
-
-  /* mobile */
-  width: 10rem;
-  bottom: -5rem;
-  right: -5rem;
 }
 
 /* TEAM */
@@ -119,10 +118,6 @@
 
 #team .cards {
   display: flex;
-
-  /* mobile */
-  flex-direction: column;
-  align-items: center;
 }
 
 #team .card {
@@ -132,10 +127,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 20rem;
-  max-width: 30rem;
+  max-width: 25rem;
   padding: 1.5rem 0 3rem 0;
-  margin-bottom: 3.5rem;
 }
 
 .card__avatar {
@@ -170,23 +163,8 @@
   border-radius: 100%;
 }
 
-#team .bg-pattern {
-  position: absolute;
-
-  /* mobile */
-  top: -5rem;
-  left: -5rem;
-  height: 10rem;
-  width: 10rem;
-}
 #team .bg-pattern--2 {
   position: absolute;
-
-  /* mobile */
-  bottom: -5rem;
-  right: -5rem;
-  height: 10rem;
-  width: 10rem;
 }
 
 #clients {
@@ -202,20 +180,6 @@
 
 #clients .brand {
   max-width: 15rem;
-
-  /* mobile */
-  margin: 2rem auto;
-}
-
-#clients .bg-pattern {
-  position: absolute;
-
-  /* mobile */
-  width: 10rem;
-  height: 10rem;
-  bottom: -5rem;
-  left: -5rem;
-  transform: rotate(-90deg);
 }
 
 .footer {
@@ -227,11 +191,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.footer .col:first-child {
-  /* mobile */
-  margin-bottom: 2rem;
 }
 
 .footer__logo {
@@ -252,11 +211,6 @@
 .footer__contact {
   display: flex;
   color: var(--primary-ligth);
-
-  /* mobile */
-  text-align: center;
-  flex-direction: column;
-  margin-bottom: 3rem;
 }
 
 .footer__contact span:not(:last-child) {
