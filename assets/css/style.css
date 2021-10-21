@@ -8,8 +8,8 @@
 @import url(./global/about.css);
 
 /* DEVICES */
-@import url(./devices/mobile-home.css) (max-width: 576px);
-@import url(./devices/tablet.css) (min-width: 577px);
-@import url(./devices/desktop.css) (min-width: 992px);
+@import url(./devices/mobile-home.css) (max-width: 767px);
+@import url(./devices/tablet.css) (min-width: 768px);
+@import url(./devices/desktop.css) (min-width: 1024px);
 
-@import url(./devices/mobile-about.css) (max-width: 576px);
+@import url(./devices/mobile-about.css) (max-width: 767px);
