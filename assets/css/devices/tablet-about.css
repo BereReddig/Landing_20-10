@@ -1,0 +1,76 @@
+#about header .bg-pattern {
+  width: 10rem;
+  bottom: 0;
+  right: -5rem;
+}
+
+#team .cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#team .card {
+  min-width: 45%;
+  margin: 2rem 0;
+}
+
+#team .bg-pattern {
+  top: 0;
+  left: -5rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+#team .bg-pattern--2 {
+  bottom: -5rem;
+  right: -5rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+#clients {
+  overflow: hidden;
+}
+
+#clients .brands {
+  justify-content: center;
+}
+
+#clients .brand {
+  margin: 2rem;
+}
+
+#clients .bg-pattern {
+  width: 10rem;
+  height: 10rem;
+  top: -5rem;
+  left: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .col:first-child {
+  width: 30%;
+  flex-direction: column;
+}
+
+.footer__logo {
+  width: 10rem;
+}
+
+.footer__nav li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer .col:last-child {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-media {
+  align-self: end;
+}
