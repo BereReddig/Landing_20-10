@@ -5,6 +5,7 @@ html {
 
 body {
   font-family: var(--ff-body);
+  color: var(--light);
 }
 
 h1,
@@ -24,4 +25,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-

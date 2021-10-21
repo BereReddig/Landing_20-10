@@ -1,0 +1,101 @@
+#about header {
+  position: relative;
+  padding: 6rem var(--container) 4rem var(--container);
+  overflow: hidden;
+}
+
+/* NAVBAR */
+#about .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem var(--container);
+}
+
+#about .navbar .logo {
+  height: 2rem;
+}
+
+#about .navbar .logo {
+  z-index: 101;
+}
+
+#about label[for='nav-toggle'] {
+  z-index: 101;
+}
+
+#about input[name='nav-toggle'] {
+  display: none;
+}
+
+#about .nav-menu {
+  display: none;
+}
+
+#about input[name='nav-toggle']:checked ~ .nav-menu {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-dark);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 6rem 0 3rem 0;
+}
+
+#about .navbar nav li {
+  font-size: var(--font-lg);
+}
+
+#about .navbar nav li:not(:last-child) {
+  margin-bottom: 1.5rem;
+  color: var(--light);
+}
+
+#about .navbar nav .cta {
+  color: var(--light);
+  padding: 0.6rem 1.5rem 0.9rem 1.5rem;
+  border: 2px solid var(--light);
+  border-radius: 50px;
+}
+
+/* BANNER */
+.main-title {
+  font-size: var(--font-2xl);
+  margin-bottom: 1rem;
+}
+
+.main-p {
+  position: relative;
+  padding: 2rem 0;
+
+  font-size: var(--font-lg);
+  line-height: 1.9;
+}
+
+.main-p::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 4px;
+  background-color: var(--secondary);
+}
+
+#about header .bg-pattern {
+  position: absolute;
+  width: 10rem;
+  bottom: -5rem;
+  right: -5rem;
+  z-index: 0;
+}
