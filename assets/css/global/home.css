@@ -2,28 +2,31 @@
 Typography 
 =============*/
 .center-title h1,
-.center-title p {
-  text-align: center;
-  color: var(--white);
+.center-title p,
+.features h2,
+.feedbacks h2,
+.feedback > *,
+footer h5,
+footer ul li a {
+    color: var(--white);
 }
 
 .center-title .span-h1,
-.bg-patter-3 h3 {
+.features h3 {
   color: var(--secondary);
 }
 
-.bg-patter-3 h2 {
-    color: var(--white);
-    font-size: var();
-}
-
-.bg-patter-3 h3 {
-    text-align: center;
-}
-
-.bg-patter-3 p {
+.features p,
+footer p {
     color: var(--gray);
-    text-align: center;
+}
+
+.feedbacks h3 {
+  color: var(--primary-ligth);
+}
+
+.contact-us > * {
+  color: var(--primary-dark);
 }
 /*=============
 Layout
@@ -58,7 +61,7 @@ header {
   background-position: bottom;
 }
 
-.bg-patter-3 {
+.features {
     background-image: url('../../images/bg-pattern-home-3.svg');
     background-repeat: no-repeat;
     background-size: 50%;
@@ -66,9 +69,67 @@ header {
     background-color: var(--primary-dark);
 }
 
-.bg-patter-3 .border-pink {
+.features .border-pink {
     border: 5px solid var(--secondary);
     width: 150px;
+}
+
+.feedbacks {
+  background-image: url('../../images/bg-pattern-home-4-about-3.svg');
+  background-repeat: no-repeat;
+  background-color: var(--primary);
+}
+
+.contact-us {
+  background-image: url('../../images/bg-pattern-home-6-about-5.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 100%;
+  padding: 20%;
+  background-color: var(--secondary);
+}
+
+.contact-us .btn-contact {
+  background: none;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  padding: 5% 17%;
+  border: 3px solid var(--primary-dark);
+  margin-top: 10%;
+}
+
+footer {
+  background-color: var(--primary-dark);
+  height: 100%;
+  padding: 15% var(--container);
+}
+
+footer h5,
+footer nav,
+footer .adress,
+footer .icons {
+  margin: 0 auto 10% auto;
+}
+
+footer .icons {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+
+footer .icon {
+  width: 20%;
+  cursor: pointer;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+  width: 30%;
 }
 
 

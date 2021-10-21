@@ -10,13 +10,41 @@ Typography
   font-size: var(--font-base);
 }
 
-.bg-patter-3 h2 {
+.features h2 {
   font-size: var(--font-2xl-home);
 }
 
-.bg-patter-3 p {
+.features p,
+.feedbacks .feedback > *,
+.contact-us .btn-contact,
+footer >*:not(h5) {
   font-size: var(--font-sm-home);
+  font-weight: 500;
 }
+
+.feedbacks .feedback h4 {
+  font-size: var(--font-xs-home);
+}
+
+.feedbacks h2 {
+  font-size: 3rem;
+}
+
+.contact-us h2,
+footer h5 {
+  font-size: var(--font-lg-home);
+}
+
+.center-title h1,
+.center-title p,
+.features h3,
+.features p, 
+.feedback > *,
+.contact-us h2,
+footer > * {
+    text-align: center;
+}
+
 
 /*=============
  Layout
@@ -78,27 +106,56 @@ nav.menu button:hover {
   background: var(--primary-lighter);
 }
 
-.bg-patter-3 {
+.features {
   height: 100%;
   padding: 15% var(--container);
 }
 
-.bg-patter-3 .border-pink {
+.features .border-pink {
   margin-bottom: 10%;
 }
 
-.bg-patter-3 h2 {
+.features h2 {
   margin-bottom: 15%;
 }
 
-.bg-patter-3 .features{
+.features .feature{
   margin-bottom: 5%;
 }
 
-.bg-patter-3 .features > * {
+.features .feature > *,
+.feedbacks .feedback > * {
   margin-bottom: 3%;
 }
 
-.bg-patter-3 img {
+.features img {
   margin: 0 auto;
+  height: 100px;
 }
+
+.feedbacks {
+  height: 100%;
+  padding: 15% var(--container);
+}
+
+.feedbacks .feedback:not(div.feedback:last-of-type) {
+    margin-bottom: 10%;
+}
+
+.feedbacks h2 {
+  padding: 10% 0 15% 0;
+}
+
+.feedbacks .feedback img.quotes {
+  width: 20%;
+  margin: 0 auto -7% auto;
+}
+
+.feedbacks .feedback img.avatar {
+  margin: 0 auto;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+}
+
+
