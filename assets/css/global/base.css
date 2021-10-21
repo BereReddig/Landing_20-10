@@ -5,6 +5,7 @@ html {
 
 body {
   font-family: var(--ff-body);
+  color: var(--light);
 }
 
 h1,

@@ -1,5 +1,15 @@
-#about .navbar {
+#about header {
   position: relative;
+  padding: 6rem var(--container) 4rem var(--container);
+  overflow: hidden;
+}
+
+/* NAVBAR */
+#about .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -56,4 +66,36 @@
   padding: 0.6rem 1.5rem 0.9rem 1.5rem;
   border: 2px solid var(--light);
   border-radius: 50px;
+}
+
+/* BANNER */
+.main-title {
+  font-size: var(--font-2xl);
+  margin-bottom: 1rem;
+}
+
+.main-p {
+  position: relative;
+  padding: 2rem 0;
+
+  font-size: var(--font-lg);
+  line-height: 1.9;
+}
+
+.main-p::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 4px;
+  background-color: var(--secondary);
+}
+
+#about header .bg-pattern {
+  position: absolute;
+  width: 10rem;
+  bottom: -5rem;
+  right: -5rem;
+  z-index: 0;
 }
