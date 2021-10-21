@@ -5,6 +5,7 @@
 @import url(./global/reset.css);
 @import url(./global/base.css);
 @import url(./global/home.css);
+@import url(./global/about.css);
 
 /* DEVICES */
 @import url(./devices/mobile-home.css) (max-width: 576px);
