@@ -145,13 +145,6 @@ footer {
   padding: 15% var(--container);
 }
 
-/* footer h5,
-footer nav,
-footer .adress,
-footer .icons {
-  margin: 0 auto 10% auto;
-} */
-
 footer .icons {
   display: flex;
   justify-content: space-between;

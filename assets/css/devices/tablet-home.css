@@ -1,7 +1,8 @@
 /*=============
 Typography 
 =============*/
-header .center-title {
+header .center-title,
+.feedbacks > * {
     text-align: center;
 }
 
@@ -16,12 +17,13 @@ footer h5 {
     font-size: var(--font-base-home);
 }
 
-.feedbacks > * {
-    text-align: center;
-}
-
 .feedbacks .feedback h4 {
     font-size: var(--font-xs-home);
+}
+
+.flex-50-content div.adress,
+.flex-50-content p.copyright {
+    text-align: end;
 }
 
 /*=============
@@ -97,10 +99,6 @@ header .center-title h1 {
     margin-bottom: 2%;
 }
 
-/* .feedbacks {
-    padding: var(--container-tablet);
-} */
-
 .feedbacks h2 {
     width: 76%;
     margin: 0 auto 15% auto;
@@ -121,16 +119,28 @@ header .center-title h1 {
     margin: 0;
 }
 
-/* footer {
+
+.flex-50 {
     display: flex;
 }
 
-.flex-50 {
-    flex-basis: 50%;
-    display: flex;
+.flex-50:nth-child(1) {
+    margin-bottom: 10%;
 }
 
 .flex-50-content {
     flex-basis: 50%;
-} */
+}
+
+.flex-50-content h5 {
+    margin: 0;
+}
+
+.flex-50-content nav {
+    padding-top: 24px;
+}
+
+.flex-50-content p.copyright {
+    margin-left: -16%;
+}
 

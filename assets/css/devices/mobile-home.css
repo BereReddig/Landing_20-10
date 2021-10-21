@@ -14,14 +14,6 @@ Typography
   font-size: var(--font-2xl-home);
 }
 
-/* .features p,
-.feedbacks .feedback > *,
-.contact-us .btn-contact,
-footer >*:not(h5) {
-  font-size: var(--font-sm-home);
-  font-weight: 500;
-} */
-
 .feedbacks .feedback h4 {
   font-size: var(--font-xs-home);
 }
@@ -124,11 +116,6 @@ nav.menu button:hover {
   margin-bottom: 5%;
 }
 
-/* .features .feature > *,
-.feedbacks .feedback > * {
-  margin-bottom: 3%;
-} */
-
 .features img {
   margin: 0 auto;
 }
@@ -148,18 +135,6 @@ footer nav ul {
   margin: 0 auto;
 }
 
-/* .feedbacks {
-  height: 100%;
-  padding: 15% var(--container);
-}
-
-.feedbacks .feedback:not(div.feedback:last-of-type) {
-    margin-bottom: 10%;
-}
-
-.feedbacks h2 {
-  padding: 10% 0 15% 0;
-} */
 
 
 
