@@ -1,0 +1,37 @@
+#about {
+  --container: 12%;
+}
+
+#about label[for='nav-toggle'] {
+  display: none;
+}
+
+#about .nav-menu {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#about .navbar nav li:not(:last-child) {
+  margin: 0 2rem 0 0;
+  color: var(--light);
+}
+
+#about .navbar nav li:last-child {
+  margin-left: auto;
+}
+
+#about header {
+  display: flex;
+  padding: 10rem var(--container) 6rem var(--container);
+  justify-content: space-between;
+}
+
+#about header .main-p {
+  width: 70%;
+}
+
+#about header .main-title {
+  margin-right: 10%;
+}
