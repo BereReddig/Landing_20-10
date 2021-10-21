@@ -13,3 +13,4 @@
 @import url(./devices/desktop-home.css) (min-width: 1024px);
 
 @import url(./devices/mobile-about.css) (max-width: 767px);
+@import url(./devices/tablet-about.css) (min-width: 768px);
