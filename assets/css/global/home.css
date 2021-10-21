@@ -91,11 +91,11 @@ header {
 
 .contact-us .btn-contact {
   background: none;
-  border-radius: 50%;
+  border-radius: 50px;
   margin: 0 auto;
   display: block;
   cursor: pointer;
-  padding: 5% 17%;
+  padding: 5% 10%;
   border: 3px solid var(--primary-dark);
   margin-top: 10%;
 }
