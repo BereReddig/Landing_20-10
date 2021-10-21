@@ -2,16 +2,29 @@
 Typography 
 =============*/
 .center-title h1 {
-  font-size: var(--font-2xl);
+    font-size: var(--font-display-home);
+    margin-bottom: 2%;
 }
 
 .center-title p {
   font-size: var(--font-base);
 }
 
+.bg-patter-3 h2 {
+  font-size: var(--font-2xl-home);
+}
+
+.bg-patter-3 p {
+  font-size: var(--font-sm-home);
+}
+
 /*=============
  Layout
  =============*/
+.header-image {
+  height:  850px;
+}
+
 input[name='nav-toggle'] {
   display: none;
 }
@@ -63,4 +76,29 @@ nav.menu button {
 
 nav.menu button:hover {
   background: var(--primary-lighter);
+}
+
+.bg-patter-3 {
+  height: 100%;
+  padding: 15% var(--container);
+}
+
+.bg-patter-3 .border-pink {
+  margin-bottom: 10%;
+}
+
+.bg-patter-3 h2 {
+  margin-bottom: 15%;
+}
+
+.bg-patter-3 .features{
+  margin-bottom: 5%;
+}
+
+.bg-patter-3 .features > * {
+  margin-bottom: 3%;
+}
+
+.bg-patter-3 img {
+  margin: 0 auto;
 }
