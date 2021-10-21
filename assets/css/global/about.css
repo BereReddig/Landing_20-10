@@ -107,6 +107,7 @@
   position: relative;
   background-color: #014047;
   padding: 4rem var(--container);
+  overflow: hidden;
 }
 
 .section-title {
@@ -167,4 +168,56 @@
   background-color: var(--secondary);
   border: none;
   border-radius: 100%;
+}
+
+#team .bg-pattern {
+  position: absolute;
+
+  /* mobile */
+  top: -5rem;
+  left: -5rem;
+  height: 10rem;
+  width: 10rem;
+}
+#team .bg-pattern--2 {
+  position: absolute;
+
+  /* mobile */
+  bottom: -5rem;
+  right: -5rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+#clients {
+  position: relative;
+  padding: 4rem var(--container);
+  background-color: var(--primary-dark);
+}
+
+#clients .brands {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#clients .brand {
+  max-width: 15rem;
+
+  /* mobile */
+  margin: 2rem auto;
+}
+
+#clients .bg-pattern {
+  position: absolute;
+
+  /* mobile */
+  width: 10rem;
+  height: 10rem;
+  bottom: -5rem;
+  left: -5rem;
+  transform: rotate(-90deg);
+}
+
+.footer {
+  background-color: var(--primary-dark);
 }
