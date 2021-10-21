@@ -53,10 +53,6 @@ footer > * {
   height:  850px;
 }
 
-input[name='nav-toggle'] {
-  display: none;
-}
-
 .nav-label {
   display: block !important;
   cursor: pointer;

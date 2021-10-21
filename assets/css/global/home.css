@@ -61,6 +61,10 @@ header {
   background-position: bottom;
 }
 
+input[name='nav-toggle'] {
+  display: none;
+}
+
 .features {
     background-image: url('../../images/bg-pattern-home-3.svg');
     background-repeat: no-repeat;
