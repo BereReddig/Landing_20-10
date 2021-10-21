@@ -45,6 +45,7 @@
 
   /* SPACING */
   --container: 8%;
+  --container-tablet: 16%;
 
   /* BREAKPOINTS */
   --media-sm: 36rem;

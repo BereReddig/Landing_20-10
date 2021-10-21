@@ -14,13 +14,13 @@ Typography
   font-size: var(--font-2xl-home);
 }
 
-.features p,
+/* .features p,
 .feedbacks .feedback > *,
 .contact-us .btn-contact,
 footer >*:not(h5) {
   font-size: var(--font-sm-home);
   font-weight: 500;
-}
+} */
 
 .feedbacks .feedback h4 {
   font-size: var(--font-xs-home);
@@ -102,13 +102,17 @@ nav.menu button:hover {
   background: var(--primary-lighter);
 }
 
+.center-title h1 br {
+  display: none;
+}
+
 .features {
   height: 100%;
   padding: 15% var(--container);
 }
 
 .features .border-pink {
-  margin-bottom: 10%;
+  width: 150px;
 }
 
 .features h2 {
@@ -120,17 +124,31 @@ nav.menu button:hover {
   margin-bottom: 5%;
 }
 
-.features .feature > *,
+/* .features .feature > *,
 .feedbacks .feedback > * {
   margin-bottom: 3%;
-}
+} */
 
 .features img {
   margin: 0 auto;
-  height: 100px;
 }
 
-.feedbacks {
+.feedbacks h2 {
+  padding: 10% 0 15% 0;
+}
+
+footer h5,
+footer nav,
+footer .adress,
+footer .icons {
+  margin: 0 auto 10% auto;
+}
+
+footer nav ul {
+  margin: 0 auto;
+}
+
+/* .feedbacks {
   height: 100%;
   padding: 15% var(--container);
 }
@@ -141,18 +159,8 @@ nav.menu button:hover {
 
 .feedbacks h2 {
   padding: 10% 0 15% 0;
-}
+} */
 
-.feedbacks .feedback img.quotes {
-  width: 20%;
-  margin: 0 auto -7% auto;
-}
 
-.feedbacks .feedback img.avatar {
-  margin: 0 auto;
-  height: 100px;
-  border-radius: 50%;
-  border: 5px solid var(--white);
-}
 
 
