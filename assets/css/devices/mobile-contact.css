@@ -1,0 +1,32 @@
+.contact-form .ask-us .bg-pattern {
+  display: none;
+}
+
+.contact-form .bg-pattern--2 {
+  width: 10rem;
+  height: 10rem;
+  bottom: -5rem;
+  right: -5rem;
+}
+
+.contact-form .main-title,
+.contact-form .subtitle {
+  text-align: center;
+}
+
+.services {
+  margin-bottom: 6rem;
+}
+.services li {
+  flex-direction: column;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.services li img {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form .form .btn {
+  width: 100%;
+}

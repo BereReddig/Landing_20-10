@@ -1,0 +1,23 @@
+.contact-form .ask-us .bg-pattern {
+  display: none;
+}
+
+.contact-form .bg-pattern--2 {
+  width: 16rem;
+  height: 16rem;
+  bottom: -8rem;
+  right: -8rem;
+}
+
+.services {
+  margin-bottom: 4rem;
+}
+
+.services li {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.services li img {
+  margin-right: 2rem;
+}

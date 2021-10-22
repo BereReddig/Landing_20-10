@@ -3,6 +3,20 @@
   position: absolute;
 }
 
+.btn {
+  font-size: var(--font-lg);
+  color: var(--light);
+  background-color: transparent;
+  padding: 0.6rem 2rem 0.9rem 2rem;
+  border: 2px solid var(--light);
+  border-radius: 50px;
+}
+
+.btn--dark {
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
 #about header {
   position: relative;
   padding: 6rem var(--container) 4rem var(--container);
@@ -10,7 +24,7 @@
 }
 
 /* NAVBAR */
-#about .navbar {
+.navbar-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,27 +36,27 @@
   padding: 2rem var(--container);
 }
 
-#about .navbar .logo {
+.navbar-top .logo {
   height: 2rem;
 }
 
-#about .navbar .logo {
+.navbar-top .logo {
   z-index: 101;
 }
 
-#about label[for='nav-toggle'] {
+.navbar-top label[for='nav-toggle'] {
   z-index: 101;
 }
 
-#about input[name='nav-toggle'] {
+.navbar-top input[name='nav-toggle'] {
   display: none;
 }
 
-#about .nav-menu {
+.nav-menu {
   display: none;
 }
 
-#about input[name='nav-toggle']:checked ~ .nav-menu {
+.navbar-top input[name='nav-toggle']:checked ~ .nav-menu {
   position: absolute;
   z-index: 100;
   top: 0;
@@ -57,20 +71,13 @@
   padding: 6rem 0 3rem 0;
 }
 
-#about .navbar nav li {
+.navbar-top nav li {
   font-size: var(--font-lg);
 }
 
-#about .navbar nav li:not(:last-child) {
+.navbar-top nav li:not(:last-child) {
   margin-bottom: 1.5rem;
   color: var(--light);
-}
-
-#about .navbar nav .cta {
-  color: var(--light);
-  padding: 0.6rem 1.5rem 0.9rem 1.5rem;
-  border: 2px solid var(--light);
-  border-radius: 50px;
 }
 
 /* BANNER */
@@ -171,6 +178,7 @@
   position: relative;
   padding: 4rem var(--container);
   background-color: var(--primary-dark);
+  overflow: hidden;
 }
 
 #clients .brands {
@@ -180,6 +188,26 @@
 
 #clients .brand {
   max-width: 15rem;
+}
+
+#contact-cta {
+  padding: 6rem var(--container);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary);
+  overflow: hidden;
+}
+
+#contact-cta .bg-pattern {
+  left: 0;
+  bottom: -5%;
+}
+
+#contact-cta .section-title {
+  color: var(--primary-dark);
+  line-height: 1.2;
 }
 
 .footer {
