@@ -1,0 +1,51 @@
+.btn--filled {
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+.contact-form {
+  position: relative;
+  padding: 6rem var(--container);
+  background-color: var(--primary);
+  overflow: hidden;
+}
+
+#contact .subtitle {
+  font-size: var(--font-xl);
+  color: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.services {
+  padding: 0;
+}
+
+.services li {
+  display: flex;
+  align-items: center;
+}
+
+.services li img {
+  width: 5rem;
+}
+
+.services li p {
+  font-size: var(--font-lg);
+  font-weight: 600;
+}
+
+.contact-form .form input,
+.contact-form .form textarea {
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--light);
+  padding: 0.5rem 1rem;
+  color: var(--light);
+}
+
+.contact-form .form input::placeholder,
+.contact-form .form textarea::placeholder {
+  color: var(--primary-lighter);
+}
