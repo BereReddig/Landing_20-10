@@ -42,6 +42,11 @@
   --font-2xl-home: 4.2rem;
   --font-display-home: 4.9rem;
 
+  /* FONT SIZES HOME  DESKTOP */
+  --font-xs-home-desktop: 0.9rem;
+  --font-lg-home-desktop: 3rem;
+  --font-xl-home-desktop: 4rem;
+
 
   /* SPACING */
   --container: 8%;

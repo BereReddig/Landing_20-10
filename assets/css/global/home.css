@@ -21,6 +21,7 @@ footer p {
     color: var(--gray);
 }
 
+.feedbacks h2 span, 
 .feedbacks h3 {
   color: var(--primary-ligth);
 }
@@ -63,6 +64,11 @@ header {
   padding: 20% var(--container);
 }
 
+.center-title .border-blue {
+  display: none;
+  border: 3px solid var(--primary-lighter);
+}
+
 .header-image {
   background-image: url('../../images/bg-pattern-home-2.svg');
   background-repeat: no-repeat;
@@ -71,6 +77,10 @@ header {
 }
 
 input[name='nav-toggle'] {
+  display: none;
+}
+
+header img.bg-pattern-desktop-add{
   display: none;
 }
 
@@ -83,7 +93,7 @@ input[name='nav-toggle'] {
 }
 
 .features .border-pink {
-    border: 5px solid var(--secondary);
+    border: 3px solid var(--secondary);
     margin-bottom: 10%;
 }
 
