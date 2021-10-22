@@ -106,6 +106,7 @@ section.feedbacks div.feedback:not(:last-of-type){
 
 footer {
     display: flex;
+    padding: 10% var(--container);
 }
 
 footer .flex-50 {
