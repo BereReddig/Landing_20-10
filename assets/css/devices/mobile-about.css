@@ -39,6 +39,14 @@
   transform: rotate(-90deg);
 }
 
+#contact-cta {
+  flex-direction: column;
+}
+
+#contact-cta .bg-pattern {
+  width: 10rem;
+}
+
 .footer .col {
   flex-direction: column;
   align-items: center;
