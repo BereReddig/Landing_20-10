@@ -288,23 +288,23 @@ const routes = {
   '/about': about(),
 };
 
-
-/*--------------------------- 
-BACK4APP
---------------------------- */
 const rootDiv = document.getElementById('root');
 const onNavigate = (_pathname) => {
   window.history.replaceState(null, null, _pathname);
   window.history.pushState(null, _pathname, _pathname);
   rootDiv.innerHTML = routes[_pathname];
 
-    // Change document content on home load
-    _pathname === '/' ? renderCustomers() : undefined;
+  // Change document content on home load
+  _pathname === '/' ? renderCustomers() : undefined;
+  _pathname === '/contact' ? loadForm() : undefined;
 };
 
 // Show home view on page load
 rootDiv.addEventListener('onload', onNavigate('/'));
 
+/*--------------------------- 
+BACK4APP
+--------------------------- */
 //Reading your First Data Object from Back4App
 async function renderCustomers() {
   const query = new Parse.Query('customers');
@@ -335,26 +335,29 @@ async function renderCustomers() {
   }
 }
 
-renderCustomers();
-
-
 /*--------------------------- 
 EMAILJS
 --------------------------- */
-window.onload = function() {
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
+const loadForm = () => {
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (event) => {
       event.preventDefault();
 
+      console.log(this);
+
       // generate a five digit number for the contact_number variable
-      this.contact_number.value = Math.random() * 100000 | 0;
+      this.contact_number.value = (Math.random() * 100000) | 0;
 
       // these IDs from the previous steps
-      emailjs.sendForm('contact_service', 'contact_form', this)
-          .then(function() {
-              console.log('SUCCESS!');
-          }, function(error) {
-              console.log('FAILED...', error);
-          });
-  });
-}
-
+      emailjs.sendForm('contact_service', 'contact_form', this).then(
+        function () {
+          console.log('SUCCESS!');
+        },
+        function (error) {
+          console.log('FAILED...', error);
+        }
+      );
+    });
+  }
+};
