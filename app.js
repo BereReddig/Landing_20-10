@@ -77,8 +77,8 @@ const home = () => {
                 “The team perfectly fit the specialized skill set required. They focused on the most
                 essential features helping us launch the platform eight months faster than planned.”
               </p>
-              <h3>Kady Baker</h3>
-              <h4>Product Manager at Bookmark</h4>
+              <h3 id='customer-1'>Kady Baker</h3>
+              <h4 id='customer-role-1'>Product Manager at Bookmark</h4>
               <img src="./assets/images/avatar-kady.jpg" alt="kady" class="avatar" />
             </div>
 
@@ -88,8 +88,8 @@ const home = () => {
                 “We needed to automate our entire onboarding process. The team came in and built out the
                 whole journey. Since going live, user retention has gone through the roof!”
               </p>
-              <h3>Aiysha Reese</h3>
-              <h4>Founder of Manage</h4>
+              <h3 id='customer-2'>Aiysha Reese</h3>
+              <h4 id='customer-role-2'>Founder of Manage</h4>
               <img src="./assets/images/avatar-aiysha.jpg" alt="aiysha" class="avatar" />
             </div>
 
@@ -99,8 +99,8 @@ const home = () => {
                 “Amazing. Our team helped us build an app that delivered a new experience for hiring a
                 physio. The launch was an instant success with 100k downloads in the first month.”
               </p>
-              <h3>Arthur Clarke</h3>
-              <h4>Co-founder of MyPhysio</h4>
+              <h3 id='customer-3'>Arthur Clarke</h3>
+              <h4 id='customer-role-3'>Co-founder of MyPhysio</h4>
               <img src="./assets/images/avatar-arthur.jpg" alt="arthur" class="avatar" />
             </div>
           </div>
@@ -297,3 +297,38 @@ const onNavigate = (_pathname) => {
 
 // Show home view on page load
 rootDiv.addEventListener('onload', onNavigate('/'));
+
+
+ //Reading your First Data Object from Back4App
+ async function retrieveCustomer() {
+  const query = new Parse.Query("customers");
+  
+  try {
+      const customer_1 = await query.get("ar8NU8Xv1f");
+      const name_1 = customer_1.get("name");
+      const role_1 = customer_1.get("role");
+  
+      const customer_2 = await query.get("YARt5Z5smp");
+      const name_2 = customer_2.get("name");
+      const role_2 = customer_2.get("role");
+
+      const customer_3 = await query.get("Of2Z8tvGBV");
+      const name_3 = customer_3.get("name");
+      const role_3 = customer_3.get("role");
+
+
+      // alert(`Name: ${name} role: ${role}`);
+      document.getElementById('customer-1').innerHTML = name_1;
+      document.getElementById('customer-role-1').innerHTML = role_1;
+
+      document.getElementById('customer-2').innerHTML = name_2;
+      document.getElementById('customer-role-2').innerHTML = role_2;
+
+      document.getElementById('customer-3').innerHTML = name_3;
+      document.getElementById('customer-role-3').innerHTML = role_3;
+  } catch (error) {
+      alert(`Failed to retrieve the object, with error code: ${error.message}`);
+  }
+}  
+
+retrieveCustomer();
