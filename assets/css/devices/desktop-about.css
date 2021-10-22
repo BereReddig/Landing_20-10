@@ -2,27 +2,27 @@
   --container: 12%;
 }
 
-#about label[for='nav-toggle'] {
+.navbar-top label[for='nav-toggle'] {
   display: none;
 }
 
-#about .navbar .logo {
+.navbar-top .logo {
   margin-right: 3rem;
 }
 
-#about .nav-menu {
+.nav-menu {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: flex-start;
 }
 
-#about .navbar nav li:not(:last-child) {
+.navbar-top nav li:not(:last-child) {
   margin: 0 2rem 0 0;
   color: var(--light);
 }
 
-#about .navbar nav li:last-child {
+.navbar-top nav li:last-child {
   margin-left: auto;
 }
 
