@@ -268,13 +268,13 @@ const contact = () => {
             </ul>
           </div>
 
-          <form action="#" class="form">
+          <form action="#" id="contact-form" class="form">
             <input type="text" name="name" id="name" placeholder="Name" />
             <input type="email" name="email" id="email" placeholder="Email Address" />
             <input type="text" name="company-name" id="company-name" placeholder="Company Name" />
             <input type="text" name="title" id="title" placeholder="Title" />
             <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-            <button class="btn btn--filled">submit</button>
+            <button class="btn btn--filled" type="submit">submit</button>
           </form>
           <img src="./assets/images/bg-pattern-contact-2.svg" alt="" class="bg-pattern bg-pattern--2" />
         </section>
@@ -288,21 +288,25 @@ const routes = {
   '/about': about(),
 };
 
+
+/*--------------------------- 
+BACK4APP
+--------------------------- */
 const rootDiv = document.getElementById('root');
 const onNavigate = (_pathname) => {
   window.history.replaceState(null, null, _pathname);
   window.history.pushState(null, _pathname, _pathname);
   rootDiv.innerHTML = routes[_pathname];
 
-  // Change document content on home load
-  _pathname === '/' ? renderCustomers() : undefined;
+    // Change document content on home load
+    _pathname === '/' ? renderCustomers() : undefined;
 };
 
 // Show home view on page load
 rootDiv.addEventListener('onload', onNavigate('/'));
 
 //Reading your First Data Object from Back4App
-async function renderCustomers() {
+async function retrieveCustomer() {
   const query = new Parse.Query('customers');
 
   try {
@@ -330,3 +334,27 @@ async function renderCustomers() {
     alert(`Failed to retrieve the object, with error code: ${error.message}`);
   }
 }
+
+retrieveCustomer();
+
+
+/*--------------------------- 
+EMAILJS
+--------------------------- */
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // generate a five digit number for the contact_number variable
+      this.contact_number.value = Math.random() * 100000 | 0;
+
+      // these IDs from the previous steps
+      emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function() {
+              console.log('SUCCESS!');
+          }, function(error) {
+              console.log('FAILED...', error);
+          });
+  });
+}
+
