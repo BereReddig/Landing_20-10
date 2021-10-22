@@ -306,7 +306,7 @@ const onNavigate = (_pathname) => {
 rootDiv.addEventListener('onload', onNavigate('/'));
 
 //Reading your First Data Object from Back4App
-async function retrieveCustomer() {
+async function renderCustomers() {
   const query = new Parse.Query('customers');
 
   try {
@@ -335,7 +335,7 @@ async function retrieveCustomer() {
   }
 }
 
-retrieveCustomer();
+renderCustomers();
 
 
 /*--------------------------- 
