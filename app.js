@@ -293,13 +293,16 @@ const onNavigate = (_pathname) => {
   window.history.replaceState(null, null, _pathname);
   window.history.pushState(null, _pathname, _pathname);
   rootDiv.innerHTML = routes[_pathname];
+
+  // Change document content on home load
+  _pathname === '/' ? renderCustomers() : undefined;
 };
 
 // Show home view on page load
 rootDiv.addEventListener('onload', onNavigate('/'));
 
 //Reading your First Data Object from Back4App
-async function retrieveCustomer() {
+async function renderCustomers() {
   const query = new Parse.Query('customers');
 
   try {
@@ -327,5 +330,3 @@ async function retrieveCustomer() {
     alert(`Failed to retrieve the object, with error code: ${error.message}`);
   }
 }
-
-retrieveCustomer();
