@@ -317,7 +317,6 @@ rootDiv.addEventListener('onload', onNavigate('/'));
       const role_3 = customer_3.get("role");
 
 
-      // alert(`Name: ${name} role: ${role}`);
       document.getElementById('customer-1').innerHTML = name_1;
       document.getElementById('customer-role-1').innerHTML = role_1;
 
