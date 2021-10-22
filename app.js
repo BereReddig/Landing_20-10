@@ -77,8 +77,8 @@ const home = () => {
                 “The team perfectly fit the specialized skill set required. They focused on the most
                 essential features helping us launch the platform eight months faster than planned.”
               </p>
-              <h3>Kady Baker</h3>
-              <h4>Product Manager at Bookmark</h4>
+              <h3></h3>
+              <h4></h4>
               <img src="./assets/images/avatar-kady.jpg" alt="kady" class="avatar" />
             </div>
 
@@ -297,3 +297,18 @@ const onNavigate = (_pathname) => {
 
 // Show home view on page load
 rootDiv.addEventListener('onload', onNavigate('/'));
+
+//Reading Data Object from Back4App
+async function fetchPersons() {
+  const query = new Parse.Query('customers');
+
+  try {
+    const results = await query.find();
+    console.log(results);
+    return results;
+  } catch (error) {
+    alert(`Failed to retrieve the object, with error code: ${error.message}`);
+  }
+}
+
+fetchPersons();
