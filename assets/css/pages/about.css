@@ -75,9 +75,18 @@
   font-size: var(--font-lg);
 }
 
+.navbar-top nav li button {
+  background-color: transparent;
+  color: var(--light);
+  cursor: pointer;
+}
+
 .navbar-top nav li:not(:last-child) {
   margin-bottom: 1.5rem;
-  color: var(--light);
+}
+
+.navbar-top nav li:not(:last-child) button {
+  border: none;
 }
 
 /* BANNER */
