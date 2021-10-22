@@ -6,9 +6,13 @@
   display: none;
 }
 
+#about .navbar .logo {
+  margin-right: 3rem;
+}
+
 #about .nav-menu {
   display: flex;
-  width: 70%;
+  width: 100%;
   align-items: center;
   justify-content: flex-start;
 }
@@ -24,14 +28,49 @@
 
 #about header {
   display: flex;
-  padding: 10rem var(--container) 6rem var(--container);
-  justify-content: space-between;
+  padding: 12rem var(--container) 6rem var(--container);
 }
 
 #about header .main-p {
-  width: 70%;
+  flex-grow: 1;
+  max-width: 45rem;
 }
 
 #about header .main-title {
+  font-size: var(--font-3xl);
   margin-right: 10%;
+}
+
+.section-title {
+  font-size: var(--font-2xl);
+}
+
+#team {
+  padding: 8rem var(--container);
+}
+
+#team .bg-pattern--2 {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+#team .card {
+  min-width: 30%;
+}
+
+#clients {
+  padding: 8rem var(--container);
+}
+
+#clients .bg-pattern {
+  top: 0;
+}
+
+#clients .brand {
+  margin: 1.5rem;
+  height: 2rem;
+}
+
+#clients .brand:last-child {
+  transform: scale(1.3);
 }
