@@ -1,0 +1,127 @@
+/*=============
+Typography 
+=============*/
+header .center-title h1.center-title-flex-50,
+header .center-title .center-title-flex-50 p {
+    text-align: left;
+}
+
+header .center-title h1.center-title-flex-50 {
+    font-size: var(--font-xl-home-desktop);
+}
+
+header .center-title .center-title-flex-50 p,
+section.features .feature .feature-content h3, 
+section.features .feature .feature-content p,
+section.feedbacks .feedback >* {
+    font-size: var(--font-xs-home-desktop);
+}
+
+section.contact-us h2 {
+    font-size: var(--font-lg-home-desktop);
+}
+
+footer .flex-50-content .adress {
+    text-align: left;
+}
+
+/*=============
+Layout
+=============*/
+header .header-image {
+    background-size: 25%;
+    background-position: 78% 100%;
+}
+
+header .container-flex{
+    padding: var(--container) var(--container-tablet) 0 var(--container-tablet);
+}
+
+header img.bg-pattern-desktop-add{
+    display: block;
+    position: absolute;
+    left: -76px;
+    top: 235px;
+    width: 15%;
+}
+
+header .center-title {
+    display: flex;
+    padding: var(--container) var(--container-tablet);
+}
+
+header .center-title .center-title-flex-50 {
+    flex-basis: 50%;
+}
+
+header .center-title .border-blue {
+    display: block;
+    width: 75px;
+    margin-bottom: 24%;
+}
+
+header .center-title .center-title-flex-50:nth-child(2){
+    padding-left: 50px;
+}
+
+section.features {
+    display: flex;
+    padding: 10% var(--container-tablet);
+    background-size: 16%;
+    background-position: 110% bottom;
+}
+
+section.features .features-flex-50 {
+    flex-basis: 50%;
+}
+
+section.features img {
+    height: 100%;
+}
+
+section.features .feature .feature-content > * {
+    padding-left: 25px;
+}
+
+section.features div.features-flex-50:nth-child(2) {
+    margin-left: 50px;
+    padding-top: 6%;
+}
+
+section.feedbacks .feedbacks-flex{
+    display: flex;
+}
+
+section.feedbacks .feedback:last-child {
+    margin-bottom: 10%;
+}
+
+section.feedbacks .feedback > * {
+    margin-bottom: 7%;
+}
+
+section.feedbacks div.feedback:not(:last-of-type){
+    padding-right: 2%;
+}
+
+footer {
+    display: flex;
+    padding: 10% var(--container);
+}
+
+footer .flex-50 {
+    display: block;
+    flex-basis: 50%;
+}
+
+.flex-50:nth-child(1) {
+    margin-bottom: 0%;
+}
+
+footer .flex-50-content.right {
+    display: none;
+}
+
+footer div.icons {
+    margin: 0  0 16% 70%;
+}

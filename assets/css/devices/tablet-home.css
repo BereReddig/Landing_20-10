@@ -1,0 +1,146 @@
+/*=============
+Typography 
+=============*/
+header .center-title,
+.feedbacks > * {
+    text-align: center;
+}
+
+header .center-title h1 {
+    font-size: var(--font-display-home);
+}
+
+.features h2,
+.feedbacks h2, 
+.contact-us h2,
+footer h5 {
+    font-size: var(--font-base-home);
+}
+
+.feedbacks .feedback h4 {
+    font-size: var(--font-xs-home);
+}
+
+.flex-50-content div.adress,
+.flex-50-content p.copyright {
+    text-align: end;
+}
+
+/*=============
+Layout
+=============*/
+.header-image {
+    background-size: 50%;
+}
+
+header .nav-label {
+    display: none;
+}
+
+header nav.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header nav.menu ul {
+    display: flex;
+}
+
+header nav.menu ul li:first-of-type {
+    margin-right: 20px;
+}
+
+header nav.menu button.btn-contact {
+    background: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 1% 4%;
+    border: 3px solid var(--white);
+    color: var(--white);
+}
+
+header .center-title {
+    padding: 10% var(--container-tablet) 30% var(--container-tablet);
+}
+
+header .center-title h1 {
+    margin-bottom: 5%;
+}
+
+.features {
+    background-size: 20%;
+    background-position: 112% 1%;
+    padding: var(--container-tablet);
+}
+
+.features .border-pink {
+    width: 75px;
+}
+
+.features h2 {
+    margin-bottom: 10%;
+}
+
+.features .feature {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .feature:not(:last-of-type) {
+    margin-bottom: 10%;
+}
+
+.features .feature .feature-content {
+    width: 80%;
+}
+
+.features .feature .feature-content h3 {
+    margin-bottom: 2%;
+}
+
+.feedbacks h2 {
+    width: 76%;
+    margin: 0 auto 15% auto;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 15% 10%;
+}
+
+.contact-us h2 {
+    align-self: center;
+}
+
+.contact-us .btn-contact {
+    padding: 2% 5%;
+    margin: 0;
+}
+
+
+.flex-50 {
+    display: flex;
+}
+
+.flex-50:nth-child(1) {
+    margin-bottom: 10%;
+}
+
+.flex-50-content {
+    flex-basis: 50%;
+}
+
+.flex-50-content h5 {
+    margin: 0;
+}
+
+.flex-50-content nav {
+    padding-top: 24px;
+}
+
+.flex-50-content p.copyright {
+    margin-left: -16%;
+}
+

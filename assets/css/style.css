@@ -1,0 +1,22 @@
+/* VARIABLES */
+@import url(./skins/default.css);
+
+/* GLOBAL */
+@import url(./global/reset.css);
+@import url(./global/base.css);
+@import url(./global/home.css);
+@import url(./global/about.css);
+@import url(./global/contact.css);
+
+/* DEVICES */
+@import url(./devices/mobile-home.css) (max-width: 767px);
+@import url(./devices/tablet-home.css) (min-width: 767px);
+@import url(./devices/desktop-home.css) (min-width: 1024px);
+
+@import url(./devices/mobile-about.css) (max-width: 767px);
+@import url(./devices/tablet-about.css) (min-width: 768px);
+@import url(./devices/desktop-about.css) (min-width: 1024px);
+
+@import url(./devices/mobile-contact.css) (max-width: 767px);
+@import url(./devices/tablet-contact.css) (min-width: 768px);
+@import url(./devices/desktop-contact.css) (min-width: 1024px);

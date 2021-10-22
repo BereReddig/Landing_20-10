@@ -1,0 +1,266 @@
+/* GENERAL */
+.bg-pattern {
+  position: absolute;
+}
+
+.btn {
+  font-size: var(--font-lg);
+  color: var(--light);
+  background-color: transparent;
+  padding: 0.6rem 2rem 0.9rem 2rem;
+  border: 2px solid var(--light);
+  border-radius: 50px;
+}
+
+.btn--dark {
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+#about header {
+  position: relative;
+  padding: 6rem var(--container) 4rem var(--container);
+  overflow: hidden;
+}
+
+/* NAVBAR */
+.navbar-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem var(--container);
+}
+
+.navbar-top .logo {
+  height: 2rem;
+}
+
+.navbar-top .logo {
+  z-index: 101;
+}
+
+.navbar-top label[for='nav-toggle'] {
+  z-index: 101;
+}
+
+.navbar-top input[name='nav-toggle'] {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.navbar-top input[name='nav-toggle']:checked ~ .nav-menu {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-dark);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 6rem 0 3rem 0;
+}
+
+.navbar-top nav li {
+  font-size: var(--font-lg);
+}
+
+.navbar-top nav li:not(:last-child) {
+  margin-bottom: 1.5rem;
+  color: var(--light);
+}
+
+/* BANNER */
+.main-title {
+  font-size: var(--font-2xl);
+  margin-bottom: 1rem;
+}
+
+.main-p {
+  position: relative;
+  padding: 2rem 0;
+
+  font-size: var(--font-lg);
+  line-height: 1.9;
+}
+
+.main-p::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 4px;
+  background-color: var(--secondary);
+}
+
+#about header .bg-pattern {
+  z-index: 0;
+}
+
+/* TEAM */
+#team {
+  position: relative;
+  background-color: #014047;
+  padding: 4rem var(--container);
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: var(--font-xl);
+  color: var(--light);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#team .cards {
+  display: flex;
+}
+
+#team .card {
+  position: relative;
+  background-color: var(--primary-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 25rem;
+  padding: 1.5rem 0 3rem 0;
+}
+
+.card__avatar {
+  position: relative;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 2px solid var(--light);
+  margin-bottom: 1rem;
+}
+
+.card__name {
+  font-size: var(--font-lg);
+  color: var(--primary-lighter);
+}
+
+.card__role {
+  font-size: var(--font-base);
+}
+
+.card__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  bottom: -1.5rem;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 100%;
+}
+
+#team .bg-pattern--2 {
+  position: absolute;
+}
+
+#clients {
+  position: relative;
+  padding: 4rem var(--container);
+  background-color: var(--primary-dark);
+  overflow: hidden;
+}
+
+#clients .brands {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#clients .brand {
+  max-width: 15rem;
+}
+
+#contact-cta {
+  padding: 6rem var(--container);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary);
+  overflow: hidden;
+}
+
+#contact-cta .bg-pattern {
+  left: 0;
+  bottom: -5%;
+}
+
+#contact-cta .section-title {
+  color: var(--primary-dark);
+  line-height: 1.2;
+}
+
+.footer {
+  padding: 4rem var(--container);
+  background-color: var(--primary-dark);
+}
+
+.footer .col {
+  display: flex;
+}
+
+.footer__logo {
+  margin-bottom: 1.5rem;
+}
+
+.footer__nav {
+  display: flex;
+  margin: 0;
+}
+
+.footer__nav li {
+  font-weight: 600;
+  font-size: var(--font-lg);
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-ligth);
+  font-size: var(--font-base);
+}
+
+.footer__contact span:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.footer .col:nth-child(2) div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__social-media {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.footer__social-media a {
+  margin: 0 0.5rem;
+}
+
+.footer__copyright {
+  color: var(--primary-ligth);
+  font-size: var(--font-base);
+}

@@ -1,0 +1,32 @@
+#contact {
+  --container: 12%;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem var(--container) 5rem var(--container);
+}
+
+.contact-form > * {
+  flex-basis: 45%;
+}
+
+.contact-form .ask-us .bg-pattern {
+  display: block;
+  width: 12rem;
+  height: 12rem;
+  top: 12rem;
+  left: -6rem;
+}
+
+.contact-form .bg-pattern--2 {
+  width: 12rem;
+  height: 12rem;
+  bottom: 0;
+  right: -6rem;
+}
+
+.services li img {
+  margin-right: 1.5rem;
+}

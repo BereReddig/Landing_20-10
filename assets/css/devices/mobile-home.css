@@ -1,0 +1,141 @@
+/*=============
+Typography 
+=============*/
+.center-title h1 {
+    font-size: var(--font-display-home);
+    margin-bottom: 2%;
+}
+
+.center-title p {
+  font-size: var(--font-base);
+}
+
+.features h2 {
+  font-size: var(--font-2xl-home);
+}
+
+.feedbacks .feedback h4 {
+  font-size: var(--font-xs-home);
+}
+
+.feedbacks h2 {
+  font-size: 3rem;
+}
+
+.contact-us h2,
+footer h5 {
+  font-size: var(--font-lg-home);
+}
+
+.center-title h1,
+.center-title p,
+.features h3,
+.features p, 
+.feedback > *,
+.contact-us h2,
+footer > * {
+    text-align: center;
+}
+
+
+/*=============
+ Layout
+ =============*/
+.header-image {
+  height:  850px;
+}
+
+.nav-label {
+  display: block !important;
+  cursor: pointer;
+}
+
+#nav-toggle:checked ~ nav.menu {
+  display: block;
+}
+
+nav.menu {
+  display: none;
+}
+
+nav.menu {
+  position: absolute;
+  left: 75%;
+  top: 80px;
+  background-color: var(--primary-ligth);
+  width: 110px;
+}
+
+nav.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav.menu ul li {
+  padding: 0px 16%;
+  transition-duration: 0.2s;
+}
+
+nav.menu ul li:hover {
+  background: var(--primary-lighter);
+}
+
+nav.menu button {
+  border: none;
+  width: 100%;
+  padding: 0px 12%;
+  margin: 0;
+  background-color: var(--primary-ligth);
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+nav.menu button:hover {
+  background: var(--primary-lighter);
+}
+
+.center-title h1 br {
+  display: none;
+}
+
+.features {
+  height: 100%;
+  padding: 15% var(--container);
+}
+
+.features .border-pink {
+  width: 150px;
+}
+
+.features h2 {
+  margin-bottom: 15%;
+  margin-right: 20%;
+}
+
+.features .feature{
+  margin-bottom: 5%;
+}
+
+.features img {
+  margin: 0 auto;
+}
+
+.feedbacks h2 {
+  padding: 10% 0 15% 0;
+}
+
+footer h5,
+footer nav,
+footer .adress,
+footer .icons {
+  margin: 0 auto 10% auto;
+}
+
+footer nav ul {
+  margin: 0 auto;
+}
+
+
+
+
+
