@@ -342,20 +342,16 @@ const loadForm = () => {
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
+      emailjs.init('user_WKFn1swS6QbUm2bnIiYoJ');
+
       event.preventDefault();
 
-      console.log(this);
-
-      // generate a five digit number for the contact_number variable
-      this.contact_number.value = (Math.random() * 100000) | 0;
-
-      // these IDs from the previous steps
-      emailjs.sendForm('contact_service', 'contact_form', this).then(
+      emailjs.sendForm('contact_service', 'contact_form', contactForm).then(
         function () {
-          console.log('SUCCESS!');
+          alert('SUCCESS!');
         },
         function (error) {
-          console.log('FAILED...', error);
+          alert('FAILED...', error);
         }
       );
     });
