@@ -2,180 +2,72 @@
 <html>
   <head>
     <title>Landing Page 20-10-2021</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700;800;900&display=swap [fonts.googleapis.com]"
       rel="stylesheet"
     />
+    <!-- Parse & Back4App -->
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script type="text/javascript" type="text/javascript">
+      Parse.initialize(
+        'w2CsQkHzUv9oLF71QNmqgxw9p1OskOuasvkKSL2z',
+        'kLCIoTLojIPQK4rGK1ybQlXnPFI1a0skNgNoBcyS'
+      ); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+      Parse.serverURL = 'https://parseapi.back4app.com/';
+    </script>
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
   </head>
   <body>
-    <header>
-      <!-- NAVBAR-->
-      <div class="container header-image">
-        <div class="container-flex">
-          <div class="logo">
-            <img src="./assets/images/logo.svg" alt="myteam logo" />
-          </div>
-          <input type="checkbox" name="nav-toggle" id="nav-toggle" />
-          <label for="nav-toggle" class="nav-label">
-            <img
-              src="./assets/images/icon-hamburger.svg"
-              alt="hamburguer icon"
-              class="hamburguer"
-            />
-          </label>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">about</a></li>
-            </ul>
-            <button type="button" class="btn-contact">contact us</button>
-          </nav>
-        </div>
-        <img src="./assets/images/bg-pattern-home-1.svg" alt="" class="bg-pattern-desktop-add" />
-        <div class="center-title">
-          <h1 class="center-title-flex-50">
-            Find the <br />
-            best <span class="span-h1">talent</span>
-          </h1>
-          <div class="center-title-flex-50">
-            <div class="border-blue"></div>
-            <p>
-              Finding the right people and building high performing teams can be hard. Most
-              companies aren’t tapping into the abundance of global talent. We’re about to change
-              that.
-            </p>
-          </div>
-        </div>
+    <div class="navbar-top">
+      <img src="./assets/images/logo.svg" alt="logo" class="logo" />
+      <input type="checkbox" name="nav-toggle" id="nav-toggle" />
+      <label for="nav-toggle"
+        ><img src="./assets/images/icon-hamburger.svg" alt="hamburguer icon"
+      /></label>
+      <nav class="nav-menu">
+        <li><button onclick="onNavigate('/')">home</button></li>
+        <li><button onclick="onNavigate('/about')">about</button></li>
+        <li><button onclick="onNavigate('/contact')" class="btn">contact us</button></li>
+      </nav>
+    </div>
+
+    <!-- APP GOES HERE -->
+    <div id="root"></div>
+
+    <footer class="footer">
+      <div class="col">
+        <img src="./assets/images/logo.svg" alt="myteam logo" class="footer__logo" />
+        <nav class="footer__nav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+        </nav>
       </div>
-      <!-- /#container   -->
-    </header>
-
-    <section class="features">
-      <div class="features-flex-50">
-        <div class="border-pink"></div>
-        <h2>Build & manage distributed teams like no one else.</h2>
-      </div>
-
-      <div class="features-flex-50">
-        <div class="feature">
-          <img src="./assets/images/icon-person.svg" alt="" />
-          <div class="feature-content">
-            <h3>Experienced Individuals</h3>
-            <p>
-              Our network is made up of highly experienced professionals who are passionate about
-              what they do.
-            </p>
+      <div class="col">
+        <div class="footer__contact">
+          <span>987 Hillcrest Lane</span>
+          <span>Irvine, CA</span>
+          <span>California 92714</span>
+          <span>Call Us: 949-833-7432</span>
+        </div>
+        <div>
+          <div class="footer__social-media">
+            <a href="#"><img src="./assets/images/icon-facebook.svg" alt="facebook link" /></a>
+            <a href="#"><img src="./assets/images/icon-pinterest.svg" alt="pinterest link" /></a>
+            <a href="#"><img src="./assets/images/icon-twitter.svg" alt="twitter link" /></a>
           </div>
-        </div>
-
-        <div class="feature">
-          <img src="./assets/images/icon-cog.svg" alt="" />
-          <div class="feature-content">
-            <h3>Easy to Implement</h3>
-            <p>
-              Our processes have been refined over years of implementation meaning our teams always
-              deliver.
-            </p>
-          </div>
-        </div>
-
-        <div class="feature">
-          <img src="./assets/images/icon-chart.svg" alt="" />
-          <div class="feature-content">
-            <h3>Enhanced Productivity</h3>
-            <p>
-              Our customized platform with in-built analytics helps you manage your distributed
-              teams.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="feedbacks">
-      <h2>
-        Delivering real results for top companies. Some of our
-        <span class="span-h2">success stories.</span>
-      </h2>
-
-      <div class="feedbacks-flex">
-        <div class="feedback">
-          <img src="./assets/images/icon-quotes.svg" alt="quotes" class="quotes" />
-          <p>
-            “The team perfectly fit the specialized skill set required. They focused on the most
-            essential features helping us launch the platform eight months faster than planned.”
-          </p>
-          <h3>Kady Baker</h3>
-          <h4>Product Manager at Bookmark</h4>
-          <img src="./assets/images/avatar-kady.jpg" alt="kady" class="avatar" />
-        </div>
-
-        <div class="feedback">
-          <img src="./assets/images/icon-quotes.svg" alt="quotes" class="quotes" />
-          <p>
-            “We needed to automate our entire onboarding process. The team came in and built out the
-            whole journey. Since going live, user retention has gone through the roof!”
-          </p>
-          <h3>Aiysha Reese</h3>
-          <h4>Founder of Manage</h4>
-          <img src="./assets/images/avatar-aiysha.jpg" alt="aiysha" class="avatar" />
-        </div>
-
-        <div class="feedback">
-          <img src="./assets/images/icon-quotes.svg" alt="quotes" class="quotes" />
-          <p>
-            “Amazing. Our team helped us build an app that delivered a new experience for hiring a
-            physio. The launch was an instant success with 100k downloads in the first month.”
-          </p>
-          <h3>Arthur Clarke</h3>
-          <h4>Co-founder of MyPhysio</h4>
-          <img src="./assets/images/avatar-arthur.jpg" alt="arthur" class="avatar" />
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-us">
-      <h2>Ready to get started?</h2>
-      <button type="button" class="btn-contact">contact us</button>
-    </section>
-
-    <footer>
-      <div class="flex-50">
-        <div class="flex-50-content right">
-          <h5>myteam</h5>
-          <nav>
-            <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">about</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="flex-50-content">
-          <div class="adress">
-            <p>987 Hillcrest Lane</p>
-            <p>Irvine, CA</p>
-            <p>California 92714</p>
-            <p>Call Us : 949-833-7432</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-50">
-        <div class="flex-50-content">
-          <div class="icons">
-            <img src="./assets/images/icon-facebook.svg" alt="facebook" class="icon" />
-            <img src="./assets/images/icon-pinterest.svg" alt="twitter" class="icon" />
-            <img src="./assets/images/icon-twitter.svg" alt="pinterest" class="icon" />
-          </div>
-        </div>
-
-        <div class="flex-50-content">
-          <p class="copyright">Copyright 2020. All Rights Reserved</p>
+          <span class="footer__copyright">Copyright 2020. All Rights Reserved </span>
         </div>
       </div>
     </footer>
+
+    <!-- APP -->
+    <script src="./app.js"></script>
   </body>
 </html>
