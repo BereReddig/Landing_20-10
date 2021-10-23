@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700;800;900&display=swap [fonts.googleapis.com]"
       rel="stylesheet"
     />
+    <!-- Parse & Back4App -->
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
     <script type="text/javascript" type="text/javascript">
       Parse.initialize(
@@ -16,13 +17,11 @@
       ); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
       Parse.serverURL = 'https://parseapi.back4app.com/';
     </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_WKFn1swS6QbUm2bnIiYoJ');
-        })();
-    </script>
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <div class="navbar-top">
@@ -32,9 +31,9 @@
         ><img src="./assets/images/icon-hamburger.svg" alt="hamburguer icon"
       /></label>
       <nav class="nav-menu">
-        <li><button onclick="`${onNavigate('/')}`">home</button></li>
-        <li><button onclick="`${onNavigate('/about')}`">about</button></li>
-        <li><button onclick="`${onNavigate('/contact')}`" class="btn">contact us</button></li>
+        <li><button onclick="onNavigate('/')">home</button></li>
+        <li><button onclick="onNavigate('/about')">about</button></li>
+        <li><button onclick="onNavigate('/contact')" class="btn">contact us</button></li>
       </nav>
     </div>
 
