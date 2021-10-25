@@ -1,23 +1,29 @@
+import bgPattern1 from '../assets/images/bg-pattern-about-2-contact-1.svg';
+import bgPattern2 from '../assets/images/bg-pattern-contact-2.svg';
+import iconPerson from '../assets/images/icon-person.svg';
+import iconCog from '../assets/images/icon-cog.svg';
+import iconChart from '../assets/images/icon-chart.svg';
+
 const contact = () => {
   return `
       <div id="contact">
         <header>
         <section class="contact-form">
           <div class="ask-us">
-            <img src="./assets/images/bg-pattern-about-2-contact-1.svg" alt="" class="bg-pattern" />
+            <img src="${bgPattern1}" alt="" class="bg-pattern" />
             <h1 class="main-title">Contact</h1>
             <h2 class="subtitle">Ask us about</h2>
             <ul class="services">
               <li>
-                <img src="./assets/images/icon-person.svg" alt="" />
+                <img src="${iconPerson}" alt="" />
                 <p>The quality of our talent network</p>
               </li>
               <li>
-                <img src="./assets/images/icon-cog.svg" alt="" />
+                <img src="${iconCog}" alt="" />
                 <p>Usage & implementation of our software</p>
               </li>
               <li>
-                <img src="./assets/images/icon-chart.svg" alt="" />
+                <img src="${iconChart}" alt="" />
                 <p>How we help drive innovation</p>
               </li>
             </ul>
@@ -31,7 +37,7 @@ const contact = () => {
             <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
             <button class="btn btn--filled" type="submit">submit</button>
           </form>
-          <img src="./assets/images/bg-pattern-contact-2.svg" alt="" class="bg-pattern bg-pattern--2" />
+          <img src="${bgPattern2}" alt="" class="bg-pattern bg-pattern--2" />
         </section>
       </div>
     `;
