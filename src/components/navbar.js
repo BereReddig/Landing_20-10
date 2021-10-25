@@ -1,10 +1,13 @@
+import logo from '../assets/images/logo.svg';
+import hamburger from '../assets/images/logo.svg';
+
 const navbar = () => {
   return `
     <div class="navbar-top">
-      <img src="./src/assets/images/logo.svg" alt="logo" class="logo" />
+      <img src="${logo}" alt="logo" class="logo" />
       <input type="checkbox" name="nav-toggle" id="nav-toggle" />
       <label for="nav-toggle"
-        ><img src="./src/assets/images/icon-hamburger.svg" alt="hamburguer icon"
+        ><img src="${hamburger}" alt="hamburguer icon"
       /></label>
       <nav class="nav-menu">
         <li><button id="link-home">home</button></li>
