@@ -1,6 +1,6 @@
 # Landing 20/10
 
-Vainilla JS SPA - Built with [Vite](https://vitejs.dev/)
+Vanilla JS SPA - Built with [Vite](https://vitejs.dev/)
 
 ### Download dependencies
 
