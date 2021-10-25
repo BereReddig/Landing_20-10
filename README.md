@@ -2,7 +2,7 @@
 
 Vainilla JS SPA - Built with [Vite](https://vitejs.dev/)
 
-### Dowload dependencies
+### Download dependencies
 
 ```bash
 npm install
