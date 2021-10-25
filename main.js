@@ -1,3 +1,9 @@
+Parse.initialize(
+  'w2CsQkHzUv9oLF71QNmqgxw9p1OskOuasvkKSL2z',
+  'kLCIoTLojIPQK4rGK1ybQlXnPFI1a0skNgNoBcyS'
+); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+Parse.serverURL = 'https://parseapi.back4app.com/';
+
 const home = () => {
   return `
     <header>
