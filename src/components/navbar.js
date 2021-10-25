@@ -1,7 +1,3 @@
-import onNavigate from '../navigation';
-
-console.log(onNavigate);
-
 const navbar = () => {
   return `
     <div class="navbar-top">
@@ -11,9 +7,9 @@ const navbar = () => {
         ><img src="./src/assets/images/icon-hamburger.svg" alt="hamburguer icon"
       /></label>
       <nav class="nav-menu">
-        <li><button onclick="${onNavigate('/')}">home</button></li>
-        <li><button onclick="${onNavigate('/about')}">about</button></li>
-        <li><button onclick="${onNavigate('/contact')}" class="btn">contact us</button></li>
+        <li><button id="link-home">home</button></li>
+        <li><button id="link-about">about</button></li>
+        <li><button id="link-contact" class="btn">contact us</button></li>
       </nav>
     </div>
     `;
