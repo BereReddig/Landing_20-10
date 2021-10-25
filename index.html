@@ -4,7 +4,7 @@
     <title>Landing Page 20-10-2021</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700;800;900&display=swap [fonts.googleapis.com]"
       rel="stylesheet"
@@ -25,49 +25,14 @@
     ></script>
   </head>
   <body>
-    <div class="navbar-top">
-      <img src="./assets/images/logo.svg" alt="logo" class="logo" />
-      <input type="checkbox" name="nav-toggle" id="nav-toggle" />
-      <label for="nav-toggle"
-        ><img src="./assets/images/icon-hamburger.svg" alt="hamburguer icon"
-      /></label>
-      <nav class="nav-menu">
-        <li><button onclick="onNavigate('/')">home</button></li>
-        <li><button onclick="onNavigate('/about')">about</button></li>
-        <li><button onclick="onNavigate('/contact')" class="btn">contact us</button></li>
-      </nav>
-    </div>
+    <div id="navbar"></div>
 
     <!-- APP GOES HERE -->
     <div id="root"></div>
 
-    <footer class="footer">
-      <div class="col">
-        <img src="./assets/images/logo.svg" alt="myteam logo" class="footer__logo" />
-        <nav class="footer__nav">
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
-        </nav>
-      </div>
-      <div class="col">
-        <div class="footer__contact">
-          <span>987 Hillcrest Lane</span>
-          <span>Irvine, CA</span>
-          <span>California 92714</span>
-          <span>Call Us: 949-833-7432</span>
-        </div>
-        <div>
-          <div class="footer__social-media">
-            <a href="#"><img src="./assets/images/icon-facebook.svg" alt="facebook link" /></a>
-            <a href="#"><img src="./assets/images/icon-pinterest.svg" alt="pinterest link" /></a>
-            <a href="#"><img src="./assets/images/icon-twitter.svg" alt="twitter link" /></a>
-          </div>
-          <span class="footer__copyright">Copyright 2020. All Rights Reserved </span>
-        </div>
-      </div>
-    </footer>
+    <div id="footer"></div>
 
     <!-- APP -->
-    <script src="./main.js"></script>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
