@@ -1,3 +1,5 @@
+import './src/assets/css/style.css';
+
 import navbar from './src/components/navbar';
 import footer from './src/components/footer';
 
