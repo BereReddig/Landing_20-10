@@ -14,11 +14,11 @@ const initForm = () => {
       emailjs.sendForm('contact_service', 'contact_form', contactForm).then(
         function () {
           contactForm.querySelector('.btn').innerHTML = 'email sent successfully :D';
-          alert('SUCCESS!');
+          Rollbar.info('Email sent successfully');
         },
         function (error) {
           contactForm.querySelector('.btn').innerHTML = 'something went wrong :(';
-          alert('FAILED...', error);
+          Rollbar.error('Email sending failed', error);
         }
       );
     });

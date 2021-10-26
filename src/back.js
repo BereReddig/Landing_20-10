@@ -33,7 +33,7 @@ async function renderCustomers() {
     document.getElementById('customer-3').innerHTML = name_3;
     document.getElementById('customer-role-3').innerHTML = role_3;
   } catch (error) {
-    alert(`Failed to retrieve the object, with error code: ${error.message}`);
+    Rollbar.error('BACK4APP failed to retrieve object', error);
   }
 }
 

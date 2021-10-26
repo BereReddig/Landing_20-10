@@ -12,12 +12,11 @@ const routes = {
 };
 
 const rootDiv = document.getElementById('root');
+
 const onNavigate = (_pathname) => {
   window.history.replaceState(null, null, _pathname);
   window.history.pushState(null, _pathname, _pathname);
   rootDiv.innerHTML = routes[_pathname];
-
-  console.log('navigating');
 
   // Change document content on home load
   _pathname === '/' ? renderCustomers() : undefined;
