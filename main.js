@@ -1,9 +1,9 @@
 import './src/assets/css/style.css';
+import './src/rollbar';
+import onNavigate from './src/navigation';
 
 import navbar from './src/components/navbar';
 import footer from './src/components/footer';
-
-import onNavigate from './src/navigation';
 
 // Navbar initialization
 document.getElementById('navbar').innerHTML = navbar();
