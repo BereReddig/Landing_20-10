@@ -1,5 +1,4 @@
 import './src/assets/css/style.css';
-import './src/rollbar';
 import onNavigate from './src/navigation';
 
 import navbar from './src/components/navbar';
