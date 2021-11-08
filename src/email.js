@@ -5,9 +5,8 @@ const initForm = () => {
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
-      emailjs.init('user_WKFn1swS6QbUm2bnIiYoJ');
-
       event.preventDefault();
+      emailjs.init('user_WKFn1swS6QbUm2bnIiYoJ');
 
       contactForm.querySelector('.btn').innerHTML = 'sending...';
 

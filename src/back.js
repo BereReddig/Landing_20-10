@@ -7,7 +7,7 @@ Parse.initialize(
 ); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
 Parse.serverURL = 'https://parseapi.back4app.com/';
 
-//Reading your First Data Object from Back4App
+//Reading data object from Back4App
 async function renderCustomers() {
   const query = new Parse.Query('customers');
 
