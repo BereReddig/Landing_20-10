@@ -11,20 +11,22 @@ const home = () => {
   return `
     <header>
           <!-- NAVBAR-->
-          <div class="container header-image">
-            <img src="${bgPattern1}" alt="" class="bg-pattern-desktop-add" />
-            <div class="center-title">
-              <h1 class="center-title-flex-50">
-                Find the <br />
-                best <span class="span-h1">talent</span>
-              </h1>
-              <div class="center-title-flex-50">
-                <div class="border-blue"></div>
-                <p>
-                  Finding the right people and building high performing teams can be hard. Most
-                  companies aren’t tapping into the abundance of global talent. We’re about to change
-                  that.
-                </p>
+          <div class="bgPattern1">
+            <div class="container header-image">
+              <!-- <img src="${bgPattern1}" alt="" class="bg-pattern-desktop-add" />-->
+              <div class="center-title">
+                <h1 class="center-title-flex-50">
+                  Find the <br />
+                  best <span class="span-h1">talent</span>
+                </h1>
+                <div class="center-title-flex-50">
+                  <div class="border-blue"></div>
+                  <p>
+                    Finding the right people and building high performing teams can be hard. Most
+                    companies aren’t tapping into the abundance of global talent. We’re about to change
+                    that.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
