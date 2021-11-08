@@ -14,7 +14,7 @@ header .center-title .center-title-flex-50 p,
 section.features .feature .feature-content h3, 
 section.features .feature .feature-content p,
 section.feedbacks .feedback >* {
-    font-size: var(--font-xs-home-desktop);
+    font-size: var(--font-lg);
 }
 
 section.contact-us h2 {
@@ -28,6 +28,12 @@ footer .flex-50-content .adress {
 /*=============
 Layout
 =============*/
+.bgPattern1 {
+    background-image: url('/src/assets/images/bg-pattern-home-1.svg');
+    background-repeat: no-repeat;
+    background-position: -12% 50%;
+}
+
 header .header-image {
     background-size: 25%;
     background-position: 78% 100%;

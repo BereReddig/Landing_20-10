@@ -10,20 +10,14 @@ Typography
   font-size: var(--font-base);
 }
 
-.features h2 {
-  font-size: var(--font-2xl-home);
-}
-
 .feedbacks .feedback h4 {
   font-size: var(--font-xs-home);
 }
 
-.feedbacks h2 {
-  font-size: 3rem;
-}
-
 .contact-us h2,
-footer h5 {
+footer h5,
+.features h2,
+.feedbacks h2 {
   font-size: var(--font-lg-home);
 }
 
